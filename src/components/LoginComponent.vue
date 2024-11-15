@@ -6,7 +6,7 @@
       <input type="text" v-model="email" name="cajaemail" class="form-control" />
       <label>Password</label>
       <input type="text" v-model="pass" name="cajapass" class="form-control" /><br />
-      <router-link to="/perfil" class="btn btn-info mb-3"> Login </router-link>
+      <router-link to="#" class="btn btn-info mb-3"> Login </router-link>
     </form>
   </div>
 </template>
