@@ -6,7 +6,7 @@
       <input type="text" v-model="email" name="cajaemail" class="form-control" />
       <label>Password</label>
       <input type="text" v-model="pass" name="cajapass" class="form-control" /><br />
-      <router-link to="#" class="btn btn-info mb-3"> Login </router-link>
+      <button class="btn btn-info"> Login</button>
     </form>
   </div>
 </template>
@@ -32,6 +32,8 @@ export default {
             service.login(this.usuario).then(response => {
                 Global.token = response.data.response;
                 console.log(response.data.response);
+
+                this.$router.push("/perfil" );
             })
         }
     }

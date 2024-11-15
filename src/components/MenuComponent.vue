@@ -28,6 +28,9 @@
           <li class="nav-item">
             <router-link to="/login" class="nav-link"> Login </router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="/perfil" class="nav-link"> Perfil </router-link>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               Marcas

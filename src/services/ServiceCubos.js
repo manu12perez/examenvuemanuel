@@ -107,4 +107,19 @@ export default class ServiceCubos {
             })
         })
     }
+
+    getCompras(){
+        return new Promise(function(resolve) {
+            let compras = [];
+            let request = "api/Compra/ComprasUsuario";
+            let url = Global.urlApiCubos + request;
+
+            axios.get(url).then(response => {
+                console.log("Leyendo compras");
+                compras = response.data;
+                resolve(compras);
+            })
+
+        })
+    }
 }
